@@ -1,9 +1,10 @@
 package main
 
 import (
-    "saa/ch1"
+    "saa/ch2"
 )
 
 func main() {
-    ch1.Main()
+    //ch1.Main()
+    ch2.Main()
 }

@@ -6,7 +6,7 @@ import (
 )
 
 func Main() {
-    log.Printf("Greatest common divisor is: %d\n", Gcd(10, 5))
+    log.Printf("Greatest common divisor is: %d\n", Gcd(60, 24))
 
     var a []int
     for i := 0; i < 101; i++ {
@@ -31,8 +31,7 @@ func Main() {
 func Gcd(a, b int) int {
     for b != 0 {
         remainder := a % b
-        a = b
-        b = remainder
+        a, b = b, remainder
     }
 
     return a
